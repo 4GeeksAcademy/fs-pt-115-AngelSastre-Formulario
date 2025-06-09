@@ -14,7 +14,7 @@
 
 <body>
 	<div class="container mt-5 mb-5">
-		<form class="row g-3 border border-2 rounded-top rounded-bottom">
+		<form method="" class="row g-3 border border-2 rounded-top rounded-bottom"> 
 
 			<!-- HEADER -->
 
@@ -32,13 +32,13 @@
 
 			<div class="col-md-5">
 				<label for="validationDefault01" class="form-label"><strong>Card #</strong></label>
-				<input type="number" class="form-control" id="validationDefault01" oninput="validarInput()" maxlength="3" placeholder="XXXXXXXXXXXXXXXX"
+				<input type="number" class="form-control" id="validationDefault01" placeholder="XXXXXXXXXXXXXXXX"
 					required>
 			</div>
 
 			<div class="col-md-3">
 				<label for="validationDefault02" class="form-label"><strong>CVC #</strong></label>
-				<input type="number" class="form-control" id="validationDefault02" min="1" max="4" placeholder="0000" required>
+				<input type="number" class="form-control" id="validationDefault02" min="1" max="4" minplaceholder="0000" required>
 			</div>
 
 			<div class="col-md-4">
@@ -133,10 +133,10 @@
 			<!--BUTTONS SUBMIT -->
 			<div class="border-top border-2 bg-body-secondary rounded-bottom-1 d-flex justify-content-end p-3 gap-3">
 				<div class="">
-					<button class="btn btn-primary" type="submit">Submit form</button>
+					<button class="btn btn-secondary" type="submit">Submit form</button>
 				</div>
 				<div class="">
-					<button class="btn btn-primary" type="submit">Submit form</button>
+					<button class="btn btn-success" type="submit">Submit form</button>
 				</div>
 			</div>
 
@@ -151,16 +151,6 @@
 
 
 
-	<script>
-		function validarInput(event) {
-			let input = document.getElementById('validationDefault01');
-			if (input.value.length > 3) {
-				alert("El número de teléfono no puede tener más de 3 dígitos.");
-				input.value = input.value.substring(0, 3); // Reducir la entrada
-				event.preventDefault(); // Evitar que se envíe el formulario
-			}
-		}
-	</script>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
