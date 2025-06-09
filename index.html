@@ -31,21 +31,21 @@
 			<!-- INPUTS LINE 1 -->
 
 			<div class="col-md-5">
-				<label for="validationDefault01" class="form-label"><strong>Card #</strong></label>
-				<input type="number" class="form-control" id="validationDefault01" placeholder="XXXXXXXXXXXXXXXX"
+				<label for="cardNumber" class="form-label"><strong>Card #</strong></label>
+				<input type="number" class="form-control" name="cardNumber" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX"
 					required>
 			</div>
 
 			<div class="col-md-3">
-				<label for="validationDefault02" class="form-label"><strong>CVC #</strong></label>
-				<input type="number" class="form-control" id="validationDefault02" min="1" max="4" minplaceholder="0000" required>
+				<label for="secretCode" class="form-label"><strong>CVC #</strong></label>
+				<input type="number" class="form-control" name="secretCode" id="secretCode" min="1" max="4" minplaceholder="0000" required>
 			</div>
 
 			<div class="col-md-4">
-				<label for="validationDefaultUsername" class="form-label"><strong>Amount</strong></label>
+				<label for="amount" class="form-label"><strong>Amount</strong></label>
 				<div class="input-group">
 					<span class="input-group-text" id="inputGroupPrepend2">$</span>
-					<input type="number" class="form-control" id="validationDefaultUsername" placeholder="Amount"
+					<input type="number" class="form-control" name="amount" id="amount" placeholder="Amount"
 						required>
 				</div>
 			</div>
@@ -53,12 +53,12 @@
 			<!-- INPUTS LINE 2 -->
 
 			<div class="col-md-6">
-				<label for="validationDefault03" class="form-label"><strong>First Name</strong></label>
-				<input type="text" class="form-control" id="validationDefault03" maxlength="3" required>
+				<label for="firstName" class="form-label"><strong>First Name</strong></label>
+				<input type="text" class="form-control" name="firstName" id="firstName" maxlength="3" required>
 			</div>
 			<div class="col-md-6">
-				<label for="validationDefault03" class="form-label"><strong>Last Name</strong></label>
-				<input type="text" class="form-control" id="validationDefault03" required>
+				<label for="lastName" class="form-label"><strong>Last Name</strong></label>
+				<input type="text" class="form-control" name="lastName" id="lastName" required>
 			</div>
 
 
@@ -67,12 +67,12 @@
 			<!-- INPUTS LINE 3 -->
 
 			<div class="col-md-6">
-				<label for="validationDefault05" class="form-label"><strong>City</strong></label>
-				<input type="text" class="form-control" id="validationDefault05" required>
+				<label for="city" class="form-label"><strong>City</strong></label>
+				<input type="text" class="form-control" name="city" id="city" required>
 			</div>
 			<div class="col-md-3">
-				<label for="validationDefault04" class="form-label"><strong>State</strong></label>
-				<select class="form-select" id="validationDefault04" required>
+				<label for="state" class="form-label"><strong>State</strong></label>
+				<select class="form-select" name="state" id="state" required>
 					<option selected disabled value="">Pick a state</option>
 					<option>Spain</option>
 					<option>France</option>
@@ -83,8 +83,8 @@
 				</select>
 			</div>
 			<div class="col-md-3">
-				<label for="validationDefault05" class="form-label"><strong>Postal Code</strong></label>
-				<input type="text" class="form-control" id="validationDefault05" required>
+				<label for="zipCode" class="form-label"><strong>Postal Code</strong></label>
+				<input type="text" class="form-control" name="zipCode" id="zipCode" required>
 			</div>
 
 
