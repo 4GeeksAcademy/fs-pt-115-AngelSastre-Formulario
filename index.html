@@ -19,7 +19,7 @@
 			<!-- HEADER -->
 
 			<div class="border-bottom border-2 bg-body-secondary mt-0 rounded-top-1">
-				<h3 class="p-1">Payment form example</h1>
+				<h3 class="p-2">Payment form example</h1>
 			</div>
 
 			<!-- ALERT -->
@@ -30,18 +30,18 @@
 			</div>
 			<!-- INPUTS LINE 1 -->
 
-			<div class="col-md-5">
+			<div class="col-12 col-md-5">
 				<label for="cardNumber" class="form-label"><strong>Card #</strong></label>
 				<input type="number" class="form-control" name="cardNumber" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX"
 					required>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-6 col-md-3">
 				<label for="secretCode" class="form-label"><strong>CVC #</strong></label>
-				<input type="number" class="form-control" name="secretCode" id="secretCode" min="1" max="4" minplaceholder="0000" required>
+				<input type="number" class="form-control" name="secretCode" id="secretCode" placeholder="0000" required>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-6 col-md-4">
 				<label for="amount" class="form-label"><strong>Amount</strong></label>
 				<div class="input-group">
 					<span class="input-group-text" id="inputGroupPrepend2">$</span>
@@ -52,11 +52,11 @@
 
 			<!-- INPUTS LINE 2 -->
 
-			<div class="col-md-6">
+			<div class="col-6 col-md-6">
 				<label for="firstName" class="form-label"><strong>First Name</strong></label>
-				<input type="text" class="form-control" name="firstName" id="firstName" maxlength="3" required>
+				<input type="text" class="form-control" name="firstName" id="firstName" maxlength="8" required>
 			</div>
-			<div class="col-md-6">
+			<div class="col-6 col-md-6">
 				<label for="lastName" class="form-label"><strong>Last Name</strong></label>
 				<input type="text" class="form-control" name="lastName" id="lastName" required>
 			</div>
@@ -66,11 +66,11 @@
 
 			<!-- INPUTS LINE 3 -->
 
-			<div class="col-md-6">
+			<div class="col-12 col-md-6">
 				<label for="city" class="form-label"><strong>City</strong></label>
 				<input type="text" class="form-control" name="city" id="city" required>
 			</div>
-			<div class="col-md-3">
+			<div class="col-6 col-md-3">
 				<label for="state" class="form-label"><strong>State</strong></label>
 				<select class="form-select" name="state" id="state" required>
 					<option selected disabled value="">Pick a state</option>
@@ -82,7 +82,7 @@
 					<option>Conchinchina</option>
 				</select>
 			</div>
-			<div class="col-md-3">
+			<div class="col-6 col-md-3">
 				<label for="zipCode" class="form-label"><strong>Postal Code</strong></label>
 				<input type="text" class="form-control" name="zipCode" id="zipCode" required>
 			</div>
@@ -91,7 +91,7 @@
 
 			<!-- INPUTS LINE 4 -->
 
-			<div class="col-md-6 mb-3">
+			<div class="col-6 col-md-6 mb-3">
 				<p><strong>We accept:</strong></p>
 				<div class="d-flex bg-secondary p-2 rounded-1 gap-3" style="width: fit-content;">
 					<label class="form-check-label d-flex align-items-center gap-2 text-white">
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-6">
+			<div class="col-12 col-md-6">
 				<p><strong>Message</strong></p>
 				<textarea name="Message" id="SendMessage" class="form-control" rows="4"></textarea>
 				<div id="SendMessage" class="form-text">Add any notes here.</div>
@@ -133,7 +133,7 @@
 			<!--BUTTONS SUBMIT -->
 			<div class="border-top border-2 bg-body-secondary rounded-bottom-1 d-flex justify-content-end p-3 gap-3">
 				<div class="">
-					<button class="btn btn-secondary" type="submit">Submit form</button>
+					<button class="btn btn-secondary" type="reset">Cancel</button>
 				</div>
 				<div class="">
 					<button class="btn btn-success" type="submit">Submit form</button>
